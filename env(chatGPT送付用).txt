@@ -1,0 +1,24 @@
+#hostname=rdbs-002-step3-2-oshima1.mysql.database.azure.com
+#port=3306
+#username=tech0gen9student
+#password={your-password}
+#ssl-mode=require
+
+
+#Azureつなぐときはこっち
+# DB_ENGINE=mysql
+# DB_HOST=rdbs-002-step3-2-oshima1.mysql.database.azure.com
+# DB_PORT=3306
+# DB_NAME=crm_mysql
+# DB_USER=tech0gen9student
+# DB_PASSWORD=***
+# OPENAI_API_KEY=***
+
+
+#ローカル
+DB_USER="root"
+DB_PASSWORD="***"
+DB_HOST="localhost"
+DB_PORT="3306"
+DB_NAME="pos_app"
+DB_ENGINE=mysql
