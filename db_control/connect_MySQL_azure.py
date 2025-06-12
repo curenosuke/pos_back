@@ -36,12 +36,19 @@ engine = create_engine(
 )
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 
-def get_db() -> Session:
+def get_db():
     db = SessionLocal()
     try:
         yield db
     finally:
         db.close()
+
+# def get_db() -> Session:　→警告があったのでchatGPTの助言をもとに上記に変更
+#     db = SessionLocal()
+#     try:
+#         yield db
+#     finally:
+#         db.close()
 
 # ============================
 # ✅ 遅延接続に切り替えたい場合はこちらを使う（※未使用）
